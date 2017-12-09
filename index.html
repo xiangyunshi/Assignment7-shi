@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>assignmnet7</title>
+</head>
+<body>
+<h2>Simple Sign-up Page</h2>
+<form method="post">
+<label for="username">Username:</label>
+<input type="text" id="username" onblur="checkUsername()"/>
+<div id="feedback"></div>
+
+<label for="password">Password:</label>
+<input type="password" id="password" onblur="checkPassword()"/>
+<div id="psw"> </div>
+
+<label for="password">Password Confirmation:</label>
+<input type="password" id="confirmpassword" onblur="conPassword()" />
+<div id="nomatch"> </div>
+
+<label for="email">Email:</label>
+<input type="email" id="email" onblur="valEmail()">
+<div id="valid"> </div>
+<script src="js/sign-up.js"></script>	
+</body>
+
+</html>
